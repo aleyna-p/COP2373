@@ -1,0 +1,48 @@
+# Technical Design Document: AleynaPham_ProgrammingExercise_1
+
+# Name: Aleyna Pham
+# Date: August 30, 2026
+# Program Description: Cinema ticket pre-sale program that manages inventory limits.
+
+## Function: check_transaction
+Authenticates requested tickets before updating inventory.
+
+Parameters:
+    desired_tickets (int): Number of tickets requested by buyer.
+    remaining_tickets (int): Number of tickets remaining.
+
+Variables:
+    desired_tickets (int): Value fed into function that represents request.
+    remaining_tickets (int): Value refreshed and returned by function.
+
+Logic:
+    1. Verify if buyer requires value outside 1-4 range.
+    2. Verify if buyer's value exceeds remaining tickets.
+    3. Complete transaction, refresh remaining tickets, then return value.
+
+Return:
+    int: Updated remaining ticket value.
+
+## Function: main
+Runs main program loop and tracks total buyers.
+
+Parameters:
+    None
+
+Variables:
+    total_tickets (int): Counter tracking unsold tickets from value 20.
+    total_buyers (int): Accumulator counting buyers who made transactions.
+    user_input (int): Ticket count requested by buyer.
+    new_total_tickets (int): Returned value from check_transaction() function.
+
+Logic:
+    1. Set up ticket count to 20 and total buyers to 0.
+    2. Continuously loop if tickets exceed 0.
+    3. Prompt buyer for desired value and run validation function.
+    4. Add to total_buyers accumulator if transaction is completed.
+    5. Print a final message when ticket value reaches 0.
+
+Return:
+    None
+
+# Link to your repository: https://github.com/aleyna-p/COP2373
