@@ -73,7 +73,7 @@ def main():
     total_tickets = TOTAL_TICKETS
 
     # Establishes starting buyer accumulator.
-    total_buyers = 0
+    successful_buyers = 0
 
     # Store operates until number of tickets reaches zero.
     while total_tickets > 0:
@@ -86,11 +86,11 @@ def main():
         # If ticket value decreased, increase buyer count by 1.
         if new_total_tickets < total_tickets:
             total_tickets = new_total_tickets
-            total_buyers = total_buyers + 1
+            successful_buyers = successful_buyers + 1
 
     # Display final total after loop concludes.
     print('\nTickets have been sold out.')
-    print('Total buyers: ' + str(total_buyers))
+    print('Successful buyers: ' + str(successful_buyers))
 
 # Start program.
 if __name__ == '__main__':
