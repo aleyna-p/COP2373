@@ -78,7 +78,7 @@ def main():
     # Store operates until number of tickets reaches zero.
     while total_tickets > 0:
         print('\nTickets available: ' + str(total_tickets))
-        user_input = int(input('How many tickets do you wish to purchase? '))
+        user_input = int(input('Please enter the number of tickets you want to buy: '))
 
         # Check new count through check_transaction function.
         new_total_tickets = check_transaction(user_input, total_tickets)
