@@ -3,7 +3,7 @@ File: AleynaPham_ProgrammingExercise_1.py
 Description: Pre-sale program that manages a limited number of cinema tickets.
 """
 
-TOTAL_TICKETS = 20
+TOTAL_TICKETS = 10
 MAX_PER_BUYER = 4
 
 # Function 1: Check if transaction meets purchase conditions
